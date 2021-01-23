@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "admin_template_api"
+version = "0.0.1"
+description = "Admin Template API"
+authors = ["xt1800i@gmail.com"]
+
+[tool.poetry.dependencies]
+python = "^3.7.9"
+Flask = "^1.1.2"
+Flask-RESTful = "^0.3.8"
+Flask-Migrate = "^2.6.0"
+Flask-Cors = "^3.0.10"
+Flask-SQLAlchemy = "^2.4.4"
+flask-marshmallow = "^0.14.0"
+Flask-JWT-Extended = "^3.25.0"
+marshmallow-sqlalchemy = "^0.24.1"
