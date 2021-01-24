@@ -1,0 +1,15 @@
+api_spec_url - where to serve the swagger spec from. Default is /api/spec. This will make the json
+available at /api/spec as well as /api/spec.json and will also present a nice interactive
+HTML interface at /api/spec.html
+
+apiVersion - passed directly to swagger as the apiVersion attribute. Default: 0.0
+
+basePath - passed directly to swagger as the basePath attribute. Default: 'http://localhost:5000' (do not include a slash at the end)
+
+resourcePath - same as before. default: '/'
+
+produces - same as before, passed directly to swagger. The default is ["application/json"]
+
+swaggerVersion - passed directly to swagger. Default: 1.2
+
+description - description of this API endpoint. Defaults to 'Auto generated API docs by flask-restful-swagger'

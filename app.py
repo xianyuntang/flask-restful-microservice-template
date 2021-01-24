@@ -1,16 +1,18 @@
-from flask import Flask
-from extensions import db
-from config import config_factory
-from extensions.router_extension import router_register
+import click
+
+from config import create_app
 
 
-def create_app(config_name):
-    app = Flask(__name__)
+@click.group()
+def cli():
+    pass
 
-    app.config.from_object(config_factory[config_name])
 
-    db.init_app(app)
+@cli.command()
+def dev():
+    app = create_app('dev')
+    app.run()
 
-    router_register(app)
 
-    return app
+if __name__ == '__main__':
+    cli()
